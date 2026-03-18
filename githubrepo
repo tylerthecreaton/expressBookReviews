@@ -1,10 +1,3 @@
-curl -s https://api.github.com/repos/tylerthecreaton/expressBookReviews | grep -E '"full_name"|"fork"|"parent"|"source"'
+curl -s https://api.github.com/repos/tylerthecreaton/expressBookReviews | jq .parent.full_name
 
-  "full_name": "tylerthecreaton/expressBookReviews",
-  "fork": true,
-  "parent": {
-    "full_name": "ibm-developer-skills-network/expressBookReviews",
-    "fork": false,
-  "source": {
-    "full_name": "ibm-developer-skills-network/expressBookReviews",
-    "fork": false,
+"ibm-developer-skills-network/expressBookReviews"
